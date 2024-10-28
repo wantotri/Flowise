@@ -12,7 +12,7 @@ const LoginDialog = ({ show, dialogProps, onConfirm }) => {
         label: 'Username',
         name: 'username',
         type: 'string',
-        placeholder: 'john doe'
+        placeholder: ''
     }
     const passwordInput = {
         label: 'Password',
@@ -34,6 +34,7 @@ const LoginDialog = ({ show, dialogProps, onConfirm }) => {
             maxWidth='xs'
             aria-labelledby='alert-dialog-title'
             aria-describedby='alert-dialog-description'
+            sx={{ background: '#000' }}
         >
             <DialogTitle sx={{ fontSize: '1rem' }} id='alert-dialog-title'>
                 {dialogProps.title}
